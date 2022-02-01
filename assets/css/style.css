@@ -433,6 +433,55 @@ img {
 }
 
 
+/* ====================blob======================== */
+svg,
+svg circle {
+  fill:var(--title-color);
+}
+
+@keyframes from0to360 {
+  from{transform:rotate(0);}
+  to{transform:rotate(360deg);}
+}
+
+#Circle1 {
+  animation: from0to360 1s linear infinite;
+  cx: 175;
+  cy: 165;
+  r: 125;
+  transform-origin: 160px 165px;
+}
+
+@keyframes from360to0 {
+  from{transform:rotate(360deg);}
+  to{transform:rotate(0deg);}
+}
+
+#Circle2 {
+  animation: from360to0 2s linear infinite;
+  cx: 175;
+  cy: 165;
+  r: 125;
+  transform-origin: 160px 155px;
+}
+
+#Circle3 {
+  animation: from0to360 3s linear infinite;
+  cx: 175;
+  cy: 165;
+  r: 125;
+  transform-origin: 155px 150px;
+}
+
+#Circle4 {
+  animation: from360to0 2.5s linear infinite;
+  cx: 175;
+  cy: 165;
+  r: 125;
+  transform-origin: 155px 160px;
+}
+
+
 /*==================== ABOUT ====================*/
 .about__img {
     width: 200px;
